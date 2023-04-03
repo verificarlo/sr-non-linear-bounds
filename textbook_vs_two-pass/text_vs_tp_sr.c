@@ -6,11 +6,11 @@
 
 #define real float
 
-// initialize arrays with random floating-points between 1024 and 1025
+// initialize arrays with random floating-points between 0 and 1
 real *random_array(long n) {
   real *A = malloc(n * sizeof(real));
   for (int i = 0; i < n; i++) {
-    A[i] = ( ((float)rand() / (float)RAND_MAX)) + 1024 ;
+    A[i] = ( ((float)rand() / (float)RAND_MAX));
   }
   return A;
 }
