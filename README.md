@@ -35,13 +35,13 @@ To reproduce the experiments of textbook algorithm against two-pass algorithm us
 ```bash
 sr-non-linear-bounds$ cd textbook_vs_two-pass
 
-# To generate figure 4 (right)
+# To generate figure 4 (left)
 # The generated plot is a pdf file named text-vs-tp.pdf
 sr-non-linear-bounds/textbook_vs_two-pass$ verificarlo-c -O2 --function=text_vs_tp_sr ./text_vs_tp_sr.c -o text_vs_tp_sr -lm
 sr-non-linear-bounds/textbook_vs_two-pass$ text-tp.py
 
-# To generate figure 4 (left)
-# First, modify the random_array function in the text_vs_tp_sr.c file to generate random values between 0 and 1.
+# To generate figure 4 (right)
+# First, modify the random_array function in the text_vs_tp_sr.c file to generate random values between 1024 and 1025.
 # The generated plot is a pdf file named text-vs-tp.pdf
 sr-non-linear-bounds/textbook_vs_two-pass$ verificarlo-c -O2 --function=text_vs_tp_sr ./text_vs_tp_sr.c -o text_vs_tp_sr -lm
 sr-non-linear-bounds/textbook_vs_two-pass$ text-tp.py
