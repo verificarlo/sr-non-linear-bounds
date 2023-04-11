@@ -24,8 +24,8 @@ sr-non-linear-bounds/textbook$ ./run-and-plot_over_n.py
 sr-non-linear-bounds$ cd textbook_proba
 
 # The generated plot is a pdf file named textbook-p.pdf
-sr-non-linear-bounds/textbook$ gcc ./textbook.c -o textbook -lm
-sr-non-linear-bounds/textbook$ ./run-and-plot_over_n.py
+sr-non-linear-bounds/textbook_proba$ gcc ./textbook.c -o textbook -lm
+sr-non-linear-bounds/textbook_proba$ ./run-and-plot_over_n.py
 ```
 
 ## textbook against two-pass
