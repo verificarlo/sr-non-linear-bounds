@@ -32,7 +32,7 @@ def verificarlo_run(n):
     """ simulate with verificarlo the textbook algorithm with SR single precision
     """
 
-    cmd = 'VFC_BACKENDS="libinterflop_mca_int.so --precision-binary32=24" '
+    cmd = 'VFC_BACKENDS="libinterflop_mca_int.so --precision-binary32=24 --mode=rr" '
     cmd += './text_vs_tp_sr {} {} 2> error_mca.log'.format(n, sr_samples)
     samples = [float(s) for s in subprocess.getoutput(cmd).split()]
     # the two first values are the textbook and two-pass references computation in double.   
